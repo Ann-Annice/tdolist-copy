@@ -5,6 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TodolistcopyComponent } from './todolistcopy/todolistcopy.component';
+import { RouterModule, Routes } from '@angular/router';
+const appRoutes:Routes=[
+  {
+    path:"",component:TodolistcopyComponent
+  },
+  
+]
 
 @NgModule({
   declarations: [
@@ -14,7 +21,8 @@ import { TodolistcopyComponent } from './todolistcopy/todolistcopy.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
