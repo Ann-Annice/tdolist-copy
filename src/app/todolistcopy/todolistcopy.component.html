@@ -1,5 +1,4 @@
 <app-navbar></app-navbar>
-<app-navbar></app-navbar>
 
 <table class="table">
     <thead>
@@ -12,7 +11,7 @@
       </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let i of  tododata ">
+        <tr *ngFor="let i of  toDataCopy ">
            <td>{{i.id}}</td>
            <td>{{i.title}}</td>
            <td *ngIf="i.completed">
